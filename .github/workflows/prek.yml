@@ -34,9 +34,9 @@ jobs:
     permissions:
       # peter-evans/create-pull-request pushes the `update-pre-commit-hooks`
       # branch with the refreshed .pre-commit-config.yaml.
-      contents: write
+      contents: write  # Push to the `update-pre-commit-hooks` branch
       # ...and opens the pull request that proposes those revisions.
-      pull-requests: write
+      pull-requests: write  # Open a pull request to propose revisions.
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
         with:
